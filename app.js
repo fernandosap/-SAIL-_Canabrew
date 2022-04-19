@@ -16,11 +16,11 @@ app.get('/',function(req,res){
 	res.render("index")
 });
 
-app.get('/index.html',function(req,res){
-	res.redirect('/');
+app.get('/our-beer',function(req,res){
+	res.render("our-beer")
 });
 
-app.get('/about',function(req,res){
+app.get('/our-story',function(req,res){
 	res.render("about")
 });
 
@@ -28,12 +28,8 @@ app.get('/contact',function(req,res){
 	res.render("contact")
 });
 
-app.get('/srp',function(req,res){
-	res.render("srp")
-});
-
-app.get('/more',function(req,res){
-	res.render("more")
+app.get('/news',function(req,res){
+	res.render("news")
 });
 
 

@@ -29,91 +29,7 @@
 		<!-- Wrapper -->
 		<div class="wrapper">
 
-			<!-- Navigation -->
-			<div class="navbar section no-padding" role="navigation">
-				<!-- Heading -->
-				<div class="heading">
-					<div class="container">
-						<div class="row">
-							<div class="col-sm-4 hidden-xs">
-								<ul class="social">
-									<li><a href="#" class="fa fa-instagram"></a></li>
-									<li><a href="#" class="fa fa-facebook-square"></a></li>
-									<li><a href="#" class="fa fa-twitter-square"></a></li>
-								</ul>
-							</div>
-							<div class="col-sm-8">
-								<div class="finder">
-									<a href="#">
-										<span class="fa fa-map-marker"></span> Find our beer
-									</a>
-								</div>
-								<div class="cart">
-									<a href="cart.html">
-										<span class="fa fa-shopping-cart"></span> Empty
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="container">
-					<div class="navbar-header">
-						<a href="index.html" class="logo" title="Craft beer landing page">
-							<img src="images/logo.png" alt="Craft Beer HTML Template">
-						</a>
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar top-bar"></span>
-							<span class="icon-bar middle-bar"></span>
-							<span class="icon-bar bottom-bar"></span>
-						</button>
-					</div>  
-					<div class="navbar-collapse collapse">
-						<ul id="menu-primary" class="nav navbar-nav">
-							<li class="active">
-								<span>
-									<a href="index.html">Home</a>
-								</span>
-							</li>
-							<li>
-								<span>
-									<a href="shop.html">Shop</a>
-								</span>
-							</li>
-							<li class="dropdown">
-								<span>
-									<a href="our-beer.html">Our beer</a>
-								</span>
-								<ul class="dropdown-menu">
-									<li><a href="our-beer.html">Sugar Skull</a></li>
-									<li><a href="our-beer.html">BraveHeart</a></li>
-									<li><a href="our-beer.html">The Drunk Indian</a></li>
-								</ul>
-							</li>
-							<li>
-								<span>
-									<a href="our-story.html">Our story</a>
-								</span>
-							</li>
-							<li>
-								<span>
-									<a href="contact.html">Contact</a>
-								</span>
-							</li>
-							<li class="dropdown">
-								<span>
-									<a href="blog.html">Blog</a>
-								</span>
-								<ul class="dropdown-menu">
-									<li><a href="blog-single.html">Single post</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+			<%- include('navbar'); %>
 
 			<!-- Hero -->
 			<div id="hero" class="carousel slide carousel-fade section no-padding" data-ride="carousel">
@@ -128,7 +44,7 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 
-					<div class="item active" style="background-image: url(http://placehold.it/1500x730)">
+					<div class="item active" style="background-image: url(/images/imgs/index/hero-1.jpg)">
 						<!-- Content -->
 						<div class="container">
 							<div class="row blurb scrollme animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="100">
@@ -143,7 +59,7 @@
 						</div>
 					</div>
 
-					<div class="item" style="background-image: url(http://placehold.it/1500x730)">
+					<div class="item" style="background-image: url(/images/imgs/index/hero-2.jpg)">
 						<!-- Content -->
 						<div class="container">
 							<div class="row blurb scrollme animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="100">
@@ -158,7 +74,7 @@
 						</div>
 					</div>
 
-					<div class="item" style="background-image: url(http://placehold.it/1500x730)">
+					<div class="item" style="background-image: url(/images/imgs/index/hero-3.jpg)">
 						<!-- Content -->
 						<div class="container">
 							<div class="row blurb scrollme animateme" data-when="exit" data-from="0" data-to="1" data-opacity="0" data-translatey="100">
@@ -189,7 +105,7 @@
 							<a href="#" class="btn btn-default"><span>Show me more</span></a>
 						</section>
 					</div>
-					<div class="col-sm-6 matchHeight" style="background-image: url(http://placehold.it/750x485);">
+					<div class="col-sm-6 matchHeight" style="background-image: url(/images/imgs/index/block-bg-1.jpg);">
 						<div class="row">
 							<div class="col-xs-6 icon-grid">
 								<img src="images/Hops.svg" class="svg" alt="Quality Ingredients" />
@@ -217,7 +133,7 @@
 			</div>
 
 			<!-- Section -->
-			<div class="container-fluid light section" style="background-image: url(http://placehold.it/950x640);">
+			<div class="container-fluid light section" style="background-image: url(/images/imgs/index/block-bg-2.jpg);">
 				<div id="carousel-1" class="carousel slide carousel-fade bs-carousel" data-ride="carousel">
 				
 					<div class="carousel-inner" role="listbox">
@@ -227,7 +143,7 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-6 matchHeight">
-										<img src="http://placehold.it/555x355" alt="About our Brewery" class="alignMiddle" />
+										<img src="/images/imgs/index/slide-1.jpg" alt="About our Brewery" class="alignMiddle" />
 									</div>
 									<div class="col-sm-5 col-sm-push-1 matchHeight">
 										<section class="alignMiddle mobile-center">
@@ -249,7 +165,7 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-sm-6 matchHeight">
-										<img src="http://placehold.it/555x355" alt="About our Brewery" class="alignMiddle" />
+										<img src="/images/imgs/index/slide-2.jpg" alt="About our Brewery" class="alignMiddle" />
 									</div>
 									<div class="col-sm-5 col-sm-push-1 matchHeight">
 										<section class="alignMiddle mobile-center">
@@ -277,7 +193,7 @@
 			</div>
 
 			<!-- Section -->
-			<div class="container-fluid dark section" style="background-image: url(http://placehold.it/880x650);">
+			<div class="container-fluid dark section" style="background-image: url(/images/imgs/index/block-bg-3.jpg);">
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-5 matchHeight scrollme animateme" data-when="enter" data-from="0.75" data-to="0" data-opacity="0" data-translatex="-75">
@@ -296,7 +212,7 @@
 								<div class="product item">
 									<a href="our-beer.html">
 										<span>Buy it</span>
-										<img src="http://placehold.it/169x299" alt="Beer can mockup">
+										<img src="/images/imgs/index/can-1.png" alt="Beer can mockup">
 									</a>
 									<h3>Pale ale</h3>
 									<h4>&dollar;4.75</h4>
@@ -304,7 +220,7 @@
 								<div class="product item">
 									<a href="our-beer.html">
 										<span>Buy it</span>
-										<img src="http://placehold.it/169x299" alt="Beer can mockup">
+										<img src="/images/imgs/index/can-2.png" alt="Beer can mockup">
 									</a>
 									<h3>Golden ale</h3>
 									<h4>&dollar;5.00</h4>
@@ -312,7 +228,7 @@
 								<div class="product item">
 									<a href="our-beer.html">
 										<span>Buy it</span>
-										<img src="http://placehold.it/169x299" alt="Beer can mockup">
+										<img src="/images/imgs/index/can-3.png" alt="Beer can mockup">
 									</a>
 									<h3>IPA</h3>
 									<h4>&dollar;4.50</h4>
@@ -320,7 +236,7 @@
 								<div class="product item">
 									<a href="our-beer.html">
 										<span>Buy it</span>
-										<img src="http://placehold.it/169x299" alt="Beer can mockup">
+										<img src="/images/imgs/index/can-4.png" alt="Beer can mockup">
 									</a>
 									<h3>Pale ale</h3>
 									<h4>&dollar;4.50</h4>
@@ -348,7 +264,7 @@
 									<p><a href="#" class="underline">Read more</a></p>
 								</div>
 							</div>
-							<div class="background" style="background-image: url(http://placehold.it/750x535);"></div>
+							<div class="background" style="background-image: url(/images/imgs/index/latest-post-1.jpg);"></div>
 						</div>
 						<div class="col-sm-6 latest-post even matchHeight">
 							<a href="#"></a>
@@ -363,7 +279,7 @@
 									<p><a href="#" class="underline">Read more</a></p>
 								</div>
 							</div>
-							<div class="background" style="background-image: url(http://placehold.it/750x535);"></div>
+							<div class="background" style="background-image: url(/images/imgs/index/latest-post-2.jpg);"></div>
 						</div>
 					</div>
 				</div>
@@ -405,56 +321,7 @@
 				</div>
 			</div>
 
-			<!-- Footer -->
-			<footer>
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-2">
-							<h6>Useful</h6>
-							<ul>
-								<li><a href="index.html">Home</a></li>
-								<li><a href="shop.html">Shop</a></li>
-								<li><a href="our-story.html">Our story</a></li>
-								<li><a href="blog.html">Blog</a></li>
-								<li><a href="#">Login</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-2">
-							<h6>Help</h6>
-							<ul>
-								<li><a href="#">Customer service</a></li>
-								<li><a href="#">Find our beer</a></li>
-								<li><a href="#">Recent orders</a></li>
-								<li><a href="#">Contact</a></li>
-								<li><a href="#">Terms &amp; Privacy</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-2">
-							<h6>Shop</h6>
-							<ul>
-								<li><a href="#">Pale ale</a></li>
-								<li><a href="#">Golden ale</a></li>
-								<li><a href="#">Dark ale</a></li>
-								<li><a href="#">IPA</a></li>
-							</ul>
-						</div>
-						<div class="col-sm-5 col-sm-push-1">
-							<h6>Our information</h6>
-							<p><i class="fa fa-map-marker"></i> 94 River Road, London, United Kingdom</p>
-							<p><i class="fa fa-envelope-o"></i> sales@craftbeer-nation.com</p>
-							<p><i class="fa fa-phone"></i> (0)203 123 4567</p>
-							<ul class="social">
-								<li><a href="#" class="fa fa-instagram"></a></li>
-								<li><a href="#" class="fa fa-facebook-square"></a></li>
-								<li><a href="#" class="fa fa-twitter-square"></a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="copyright">
-						<p>2017 &copy; Craft Beer Nation  /  <a href="http://www.klevermedia.co.uk">Web design by Klever media</a></p>
-					</div>
-				</div>
-			</footer>
+			<%- include('footer'); %>
 
 		</div>
 		
