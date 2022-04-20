@@ -32,6 +32,10 @@ app.get('/news',function(req,res){
 	res.render("news")
 });
 
+app.get('/shop',function(req,res){
+	res.render("shop")
+});
+
 
 app.listen(port,function(req,res){
 	console.log('Escuchando en el puerto: ' + port);
